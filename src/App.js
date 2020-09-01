@@ -51,10 +51,9 @@ const App = () => {
           Search
         </button>
       </form>
-      <div className="container">
+      <div className="container pb-5">
         <div className="recipes">
           <div className="row">
-            {/* <div className="col-sm-6"> */}
             {recipes.map((recipe) => (
               <Recipe
                 key={recipe.recipe.label}
@@ -64,10 +63,19 @@ const App = () => {
                 ingredients={recipe.recipe.ingredients}
               />
             ))}
-            {/* </div> */}
+ 
           </div>
         </div>
       </div>
+      {/* <footer className="footer navbar sticky-bottom">
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-auto align-self-center">
+            <p className="text-white text-center">© Copyright 2020 AbdullahQureshi1080</p>
+          </div>
+        </div>
+      </div>
+    </footer> */}
     </div>
   );
 };
