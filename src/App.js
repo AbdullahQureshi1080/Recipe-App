@@ -4,8 +4,9 @@ import Recipe from "./Recipe";
 import "bootstrap/dist/css/bootstrap.css";
 
 const App = () => {
-  const APP_ID = "72c83c9a";
-  const APP_KEY = "cd6576c2293b2640f5dac213c3f10704";
+
+  const APP_ID = process.env.REACT_APP_API_ID;
+  const APP_KEY = process.env.REACT_APP_API_KEY;
 
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
@@ -26,14 +27,14 @@ const App = () => {
 
   const updateSearch = (e) => {
     setSearch(e.target.value);
-    // console.log(search);
+    
   };
 
   const getSearch = (e) => {
     e.preventDefault();
     setQuery(search);
     setSearch("");
-    // setQuery('');
+  
   };
 
   return (
@@ -67,15 +68,6 @@ const App = () => {
           </div>
         </div>
       </div>
-      {/* <footer className="footer navbar sticky-bottom">
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-auto align-self-center">
-            <p className="text-white text-center">© Copyright 2020 AbdullahQureshi1080</p>
-          </div>
-        </div>
-      </div>
-    </footer> */}
     </div>
   );
 };

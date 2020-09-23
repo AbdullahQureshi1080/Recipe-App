@@ -1,12 +1,21 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Krona+One&display=swap");
 .App {
   min-height: 100vh;
-  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
- background-blend-mode: multiply,multiply;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
 }
 
-.search-form{
+.search-form {
   min-height: 10vh;
   display: flex;
   justify-content: center;
@@ -35,16 +44,17 @@
   flex-wrap: wrap;
 }
 
-
 /* .container{
   margin: 50px auto;
 } */
 
-.main-heading{
+.main-heading {
   font-weight: bold;
   font-family: "Exo 2", sans-serif;
+  width: 50%;
+  margin: 0 auto;
 }
 
-.footer{
-  background-color:#181818 ;
+.footer {
+  background-color: #181818;
 }
